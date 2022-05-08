@@ -1,0 +1,152 @@
+.audio {
+    margin: 30px 0 40px 0;
+}
+
+.audio .audio-info .product-title {
+    font-weight: bold;
+    color: black;
+}
+
+.audio .audio-info .info-item {
+    margin-top: 10px;
+    font-size: 18px;
+	margin-bottom: 15px;
+	color: #0d6efd;
+	text-decoration: underline;
+}
+
+.audio .audio-info .info-item .info-label {
+    display: inline-block;
+    min-width: 100px;
+    color: #262637;
+}
+
+.audio .audio-detail .detail-title {
+    font-size: 20px;
+    color: #4824bd;
+    font-weight: bold;
+}
+
+.audio .audio-detail .detail-description {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #000000;
+    margin-top: 10px;
+    padding-right: 0;
+}
+
+.audio .audio-detail .audio-player {
+
+    margin: 10px 0;
+}
+
+.audio-player .audio-img {
+    width: 100%;
+
+}
+
+.audio-player .audio-img .title-chapter {
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+
+.audio-player .audio-img .audio-bg {
+    padding-top: 50px;
+    background-color: #0c0c0c;
+    margin: auto;
+    opacity: 0.7;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.audio-player .audio-img img {
+    width: 300px;
+    background-position: 50% 50%;
+    background-color: #2932AC;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-image: url("../../assets/images/product02.png");
+    margin: auto;
+    opacity: 0.7;
+}
+
+.audio .audio-detail .audio-player audio {
+    width: 100%;
+}
+
+.audio .audio-detail .audio-list {
+    margin-top: 25px;
+    list-style: none;
+    padding: 5px 10px;
+    margin: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.audio .audio-detail .audio-list .audio-item {
+    padding: 0 10px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #262637;
+    margin-top: 0;
+}
+
+.audio .audio-detail .audio-list .audio-item:hover,
+.audio .audio-detail .audio-list .audio-item.active {
+    border-radius: 10px;
+    background: rgba(196, 196, 196, 0.3);
+}
+
+.audio .audio-detail .audio-list .audio-item .audio-link {
+    padding: 17px 0;
+    line-height: 20px;
+    display: block;
+    color: #262637;
+    border-top: 1px solid #E9EAFA;
+    margin-top: 0;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.audio .audio-detail .audio-list {
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+a.facebook {
+    background-color: rgb(42, 42, 164);
+    border-color: rgb(42, 42, 164);
+}
+
+a.facebook:hover {
+    background-color: rgb(58 58 153) !important;
+}
+
+.audio .audio-detail .relative {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.relative .social-media {
+    width: 50%;
+    display: inline-block;
+}
+
+.relative .reading-format {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+}
+
+@media (min-width: 768px){
+	.audio .audio-detail .audio-list{
+	margin-bottom:60px;
+	}
+	.audio .audio-detail .audio-list {
+    max-height: 245px;
+	}
+}

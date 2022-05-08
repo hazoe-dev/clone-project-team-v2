@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<!-- Client -->
+	
+	
+	<definition name="client.base.definition"
+		template="/WEB-INF/layouts/client.jsp">
+		<put-attribute name="style" value="" />
+		<put-attribute name="script" value="" />
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/basefragments/client/header.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/basefragments/client/footer.jsp" />
+	</definition>
+
+	<!-- 404 Page -->
+	<definition name="404" extends="client.base.definition" template="/WEB-INF/layouts/404.jsp">
+	</definition>
+
+
+	<!-- Home Page -->
+	<definition name="homePage" extends="client.base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/client/home.jsp" />
+		<put-attribute name="style" value="css/client/home.css" />
+		<put-attribute name="script" value="js/home.js" />
+	</definition>
+
+	<!-- Detail Book Page -->
+	<definition name="detailBookPage"
+		extends="client.base.definition">
+		<put-attribute name="title" value="Detail Book Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/client/detail-book.jsp" />
+		<put-attribute name="style"
+			value="css/client/detail-book.css" />
+		<put-attribute name="script" value="js/detail-book.js" />
+	</definition>
+
+	<!-- Online Read Page -->
+	<definition name="onlineReadPage"
+		extends="client.base.definition">
+		<put-attribute name="title" value="Online Read Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/client/online-read.jsp" />
+		<put-attribute name="style"
+			value="css/client/online-read.css" />
+	</definition>
+
+	<!-- PDF Read Page -->
+	<definition name="pdfReadPage"
+		extends="client.base.definition">
+		<put-attribute name="title" value="Detail Book Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/client/pdf-read.jsp" />
+		<put-attribute name="style"
+			value="css/client/pdf-read.css" />
+	</definition>
+
+	<!-- Audio Read Page -->
+	<definition name="audioPage"
+		extends="client.base.definition">
+		<put-attribute name="title" value="Audio Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/client/audio.jsp" />
+		<put-attribute name="style"
+			value="css/client/audio.css" />
+	</definition>
+
+	<!-- List Audio Page -->
+	<definition name="listAudioPage"
+		extends="client.base.definition">
+		<put-attribute name="title" value="List Audio Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/client/list-audio.jsp" />
+		<put-attribute name="style"
+			value="css/client/list-audio.css" />
+	</definition>
+	
+	
+	<!-- List Quote Page -->
+	<definition name="listQuotePage"
+		extends="client.base.definition">
+		<put-attribute name="title" value="List Quote Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/client/list-quote.jsp" />
+	</definition>
+	
+	<!-- Auth -->
+	
+
+	<definition name="auth.base.definition"
+		template="/WEB-INF/layouts/auth.jsp">
+	</definition>
+	
+	<definition name="authPage"
+		extends="auth.base.definition">
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/auth/auth.jsp" />
+	</definition>
+	
+	
+	
+	<!-- Admin -->
+	
+	
+	<definition name="admin.base.definition"
+		template="/WEB-INF/layouts/admin.jsp">
+		<put-attribute name="style" value="" />
+		<put-attribute name="script" value="" />
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/basefragments/admin/header.jsp" />
+		<put-attribute name="sidebar"
+			value="/WEB-INF/basefragments/admin/sidebar.jsp" />
+	</definition>
+
+	<!-- Admin List Book Page -->
+	
+	<definition name="adminListBook" extends="admin.base.definition">
+		<put-attribute name="title" value="Admin List Book Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/admin/list-book.jsp" />
+	</definition>
+
+	<!-- Admin New Book Page -->
+	
+	<definition name="adminNewBook" extends="admin.base.definition">
+		<put-attribute name="title" value="Admin New Book Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/bodyfragments/admin/new-book.jsp" />
+		<put-attribute name="style" value="css/admin/new-book.css" />
+	</definition>
+
+</tiles-definitions> 

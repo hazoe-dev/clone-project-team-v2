@@ -1,0 +1,71 @@
+/* PC */
+@media (min-width: 64em) {
+    .container{
+        grid-template-columns: 25% 70%;
+    }  
+    .header-manage-list{
+        width: 100%;
+     
+    }
+}
+/* Tablet + Mobile */
+@media (max-width: 63.9375em) {
+    
+}
+/* Tablet */
+@media(min-width: 46.25em) and (max-width:63.9375em){
+    .container{
+        grid-template-columns: 25% 70%;
+    }
+    .search-by-bookname .search-bookname-label{
+        margin-right: 12px;
+    }
+    
+    .search .search-by-authorname{
+        display:inline-block;
+        margin-left:96px;
+    }
+    .custom-btn .edit-custom-btn, 
+    .custom-btn .delete-custom-btn{   
+        padding: 0px 15px;
+   
+    }
+    .list-book-container{
+        position: relative;
+     
+    }
+    .paging{
+          position: absolute;
+         
+    }
+    .header-manage-list{
+        width: 100%;
+     
+    }
+    .list-book-table{
+        width: 100%;
+    }
+    
+}
+
+/* Mobile */
+@media(max-width: 46.25em){
+    
+    .list-book-container{
+        position: relative;
+     width: 100%;
+    }
+    .list-book-table{
+        width: 100%;
+    }
+    .paging{
+        position: absolute;
+        
+    }
+    .header-manage-list{
+        width: 1320px;
+    
+    }
+  
+  
+}
